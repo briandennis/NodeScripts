@@ -16,6 +16,7 @@ function packSack(sackItems, packCapacity){
         opt(index + 1, remainingCapacity)
       );
       map[index][remainingCapacity] = best;
+      console.log('returning ' + best + ' as best and remaining capacity is' + remainingCapacity + '...');
       return best;
     }
   }
@@ -23,4 +24,4 @@ function packSack(sackItems, packCapacity){
   return opt(0, packCapacity);
 }
 
-console.log('Final value: ' + packSack(items, 70));
+console.log('Final value: ' + packSack(items, 10));
