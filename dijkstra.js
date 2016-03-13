@@ -17,12 +17,21 @@ function dijkstra(v,u, graph){
   var visited = [v];
 
   var nodeInfo = new Map();
-  previous.set(v, null);
+
+  graph.nodes.forEach(function(item){
+    if(item !== v){
+      nodeInfo.set(item, [null, Infinity]);
+    }
+    else{
+      console.log('adding v to nodeset...');
+      previous.set(item, [null, 0]);
+    }
+  });
 
   var handleNode = function(destinationNode, weight){
     if(!visited.includes(destinationNode)){
       if(!queue.includes(destinationNode)){
-        
+
       }
     }
   };
