@@ -1,5 +1,5 @@
-var sackItems = require('./sackItems.js');
-var items = sackItems.items;
+var importObject = require('./exporter.js');
+var items = importObject.sackItems;
 
 function packSack(sackItems, packCapacity){
   var map = [];
