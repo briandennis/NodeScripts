@@ -22,27 +22,29 @@ function mergeSort (list, comparisonFunction){
   var i = 0;
   var j = 0;
   var returnList = [];
-  var notDone = false;
+  var notDone = true;
 
   while(notDone){
     if(i >= left.length){
-      returnList.push(right.slice(j,right.length));
-      notDone = true;
+      returnList = returnList.concat(right.slice(j,right.length));
+      notDone = false;
     }
     else if(j >= right.length){
-      returnList.push(left.slice(i,left.length));
-      notDone = true;
+      returnList = returnList.concat(left.slice(i,left.length));
+      notDone = false;
     }
     else{
       if(comparisonFunction(left[i],right[j]) < 0){
-        returnList.push(left[i++]);
+        returnList.push(left[i]);
+        i++;
       }
       else{
-        returnList.push(right[j++]);
+        returnList.push(right[j]);
+        j++;
       }
     }
   }
-   console.log('Length: ' + returnList.length);
+   console.log(returnList);
   return returnList;
 }
 
