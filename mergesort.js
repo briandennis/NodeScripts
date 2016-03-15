@@ -1,9 +1,10 @@
+var importObject = require('./exporter.js');
+var arg = importObject.mergeList;
+
+
 function compareInts(a,b){
   return a-b;
 }
-
-
-var arg = [1,4,2,6,4,7,5,2,9];
 
 
 function mergeSort (list, comparisonFunction){
