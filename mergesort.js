@@ -34,14 +34,15 @@ function mergeSort (list, comparisonFunction){
       notDone = true;
     }
     else{
-      if(comparisonFunction(left(i),right(j)) < 0){
-        returnList.push(left(i++));
+      if(comparisonFunction(left[i],right[j]) < 0){
+        returnList.push(left[i++]);
       }
       else{
-        returnList.push(right(i++));
+        returnList.push(right[j++]);
       }
     }
   }
+   console.log('Length: ' + returnList.length);
   return returnList;
 }
 
