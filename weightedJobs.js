@@ -16,18 +16,19 @@ function optimalJobs(jobList, compareFunc){
     for(j = i-1; j > 0; j--){
       if(jobList[j].end <= jobList[i-1].start){
         prevIndex = j;
-        console.log('Prev found!');
         break;
       }
     }
     if(prevIndex === undefined) prevIndex = 0;
+
     optValues[i] = Math.max(
       jobList[i-1].value + optValues[prevIndex],
-      i > 1 ? jobList[i-2] : 0
+      i > 1 ? optValues[i-2] : 0
     );
+
   }
 
-  return optValues[1];
+  return Math.max(...optValues);
 }
 
 console.log(optimalJobs(jobs, compareJobs));
