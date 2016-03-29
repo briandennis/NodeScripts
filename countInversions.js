@@ -14,7 +14,7 @@ function countInversions(list){
     var done = false;
 
     while(!done){
-
+      
     }
   }
 }
