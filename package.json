@@ -1,0 +1,26 @@
+{
+  "name": "an-algo-a-day",
+  "version": "1.0.0",
+  "description": "One classic algorithm each day for a month to brush up.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/briandennis/30DaysOfAlgos.git"
+  },
+  "keywords": [
+    "algorithms",
+    "es6"
+  ],
+  "author": "Brian Dennis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/briandennis/30DaysOfAlgos/issues"
+  },
+  "homepage": "https://github.com/briandennis/30DaysOfAlgos#readme",
+  "dependencies": {
+    "expect": "^1.20.2"
+  }
+}
