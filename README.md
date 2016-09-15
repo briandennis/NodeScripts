@@ -1,9 +1,8 @@
 ![Travis Status](https://travis-ci.org/briandennis/An-Algo-a-Day.svg?branch=master)
 
-# An Algo a Day
+# Node Scripts
 
-Challenge to write one classic algorithm a day for a month to brush up
-
+An open source implementation of basic algorithms in JavaScript. Developed as a resource to help those beginning to learn formal computer science who come from a JavaScript background.
 ## Sorting
 
 ### BubbleSort
