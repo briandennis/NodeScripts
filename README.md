@@ -19,7 +19,7 @@ Returns an empty array if ```list``` is not an ```array``` or if ```compare``` i
 
 Where list is an ```array``` and compare is a ```function``` that operates the same way as the compare function in [Array.prototype.sort()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort).
 
-Returns an empty array if ```list``` is not an ```array``` or if ```compare``` is not supplied.
+Returns an empty array if ```list``` is not an ```array``` or if ```compare``` is not supplied. 
 
 ### QuickSort
 
