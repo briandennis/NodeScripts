@@ -1,4 +1,4 @@
-![Travis Status](https://travis-ci.org/briandennis/An-Algo-a-Day.svg?branch=master)
+![Travis Status](https://travis-ci.org/briandennis/NodeScripts.svg?branch=master)
 
 # Node Scripts
 
