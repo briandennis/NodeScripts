@@ -20,18 +20,6 @@ expect(mergeSort(list)).toEqual([])
 list = [1, 4, 2, 8, 5, 9, 7, 3, 2]
 expect(mergeSort(list, sortNumbers)).toEqual(listSorted)
 
-// InsertionSort
-const insertionSort = require('./src/insertionSort')
-
-// Error and Edge Cases
-expect(insertionSort(false)).toEqual([])
-expect(insertionSort([])).toEqual([])
-expect(insertionSort(list)).toEqual([])
-
-// Test Case
-list = [1, 4, 2, 8, 5, 9, 7, 3, 2]
-expect(insertionSort(list, sortNumbers)).toEqual(listSorted)
-
 // QuickSort
 const quickSortFactory = require('./src/quickSort')
 
